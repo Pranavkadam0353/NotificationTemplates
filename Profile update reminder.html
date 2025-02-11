@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Profile update reminder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body style="font-family: Verdana, Geneva, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;font-size: 12px;">
+    <div style="width: 100%; max-width: 640px; margin: 20px auto; background: #ffffff; padding: 20px; border: 1px solid #8bd5f3; border-radius: 8px;">
+        <div style="background: #f0f5ff; padding: 20px; text-align: start;">
+            <img src="https://strapi.redberyltest.in/uploads/V_State_Logo_5d7427afd6.png" alt="Company Logo" width="135">
+        </div>
+        <div style="padding: 20px;">
+            <h1 style="font-size: 24px; font-weight: 500; color: #004eec;">Dear $name,</h1>
+            <p> Welcome to vState Filings! To ensure you get full access to our services, please complete your profile.</p>
+            <p> Why Complete Your Profile?</p>
+            <ui>
+           <li> Gain seamless access to products or services.</li>
+            <li>Customize your account settings and preferences.</li>
+            <li> Ensure timely communication and support from our team.</li>
+            </ui>
+            <p> How to Complete Your Profile:</p>
+            <ol
+             <li>Log in to your account.</li>
+             <li>Navigate to the Profile section.</li>
+            <li>Fill in any missing information such as details needed: contact info, job role, company details, etc.</li>
+             <li>Save your changes once all fields are completed.</li>
+          </ol>
+          
+
+             <div style="margin:38px 0px; font-family: Verdana, Geneva, sans-serif;">
+              <a target="_blank" href="https://www.redberyltest.in/#/signin" style="background: #145ef0; border: 1px solid #145ef0; border-radius: 8px; box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05); color: #fff; font-size: 14px; font-weight: 500; padding: 10px 18px; font-family: Verdana, Geneva, sans-serif; text-decoration: none;" role="button">Complete Profile</a>
+            </div>
+            <div style="font-size: 12px; color: #344054; line-height: 18px; margin-top: 24px;"></div>
+            
+            <p>If you need assistance or have any questions, please don't hesitate to reach out to us.</p>
+            
+             
+
+          <div style="font-size: 12px; line-height: 18px; margin-top: 24px;">
+              
+            <p>Warm regards,<br> vState Filings<br>
+                <a href="mailto:alex@vStateFilings.com">alex@vStateFilings.com</a> | 
+                <a href="tel:+1 (718) 569-2703">+1 (718) 569-2703</a>
+            </p>
+            <p><strong><em>Disclaimer</em></strong>: <em>This is an automated email sent from vState Filings. Please do not reply to this email as responses will not be monitored. For any assistance or inquiries, kindly contact our support team.</em></p>
+        </div>
+      
+        <div style="text-align: start; font-size: 12px; color: #668570; margin-top: 30px;">
+            <p>&copy;2025 vState Filings, 301 Mill Road, Suite U5, Hewlett, NY 11557.</p>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 48px;">
+            <img src="https://strapi.redberyltest.in/uploads/V_State_Logo2_42d9258063.png" alt="Company Logo" style="width: 120px;">
+            <div style="display: flex; gap: 16px;">
+                <a href="#" aria-label="Twitter"><img src="https://strapi.redberyltest.in/uploads/Tiwtter_Logo_7dab65554b.png" alt="" style="width: 20px;"></a>
+                <a href="#" aria-label="Facebook"><img src="https://strapi.redberyltest.in/uploads/Facebook_Logo_b9561d3b0d.png" alt="" style="width: 20px;"></a>
+                <a href="#" aria-label="Instagram"><img src="https://strapi.redberyltest.in/uploads/Insta_Logo_744c88eae5.png" alt="" style="width: 20px;"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyOTP() {
+            let otpCode = document.querySelector("span").textContent;
+            navigator.clipboard.writeText(otpCode).then(() => {
+                alert("OTP Copied!");
+            });
+        }
+  function copyOTP() {
+    const otpText = document.getElementById("otp-code").innerText;
+    navigator.clipboard.writeText(otpText).then(() => {
+      const message = document.getElementById("copy-message");
+      message.innerText = "OTP copied!";
+      message.style.display = "block";
+     
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 2000);
+    }).catch(err => {
+      console.error("Error copying OTP: ", err);
+    });
+  }
+    </script>
+</body>
+</html>
